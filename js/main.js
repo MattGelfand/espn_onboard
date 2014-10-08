@@ -1,9 +1,9 @@
 $(window).scroll(function() {
-		$('.pats').each(function(){
+		$('#list_one').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+218) {
+			if (imagePos < topOfWindow+1) {
 				$(this).addClass("slideLeft");
 			}
 		});
