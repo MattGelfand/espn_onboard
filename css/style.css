@@ -91,13 +91,13 @@ html {
   .container {
     margin: 0 auto;
     padding: 5rem 0;
-    max-width: 74rem;
+    max-width: 64rem;
   }
 
   .title-box {
     margin: 0 auto;
     color: #e5e5e5;
-    padding: 6.5rem 0;
+    padding: 28.5rem 0 0 0;
     position: relative;
   }
 
