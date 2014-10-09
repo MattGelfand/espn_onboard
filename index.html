@@ -16,12 +16,18 @@
 					data-bottom="opacity:1"
 					data-top-bottom="opacity:0">
 					<figure class="logo">
-						<img class="tossing" src="img/logo.png" alt=""
+						<img src="img/logo.png" alt="">
 					</figure>
+					<hgroup
+					data-top="opacity:1"
+					data--10-top="opacity: .5"
+					data--90-top="opacity: 0"
+					>
 					<h1 class="text-lrg caps">This...is SportsCenter</h1>
-					<h2 class="byline caps">A blog by Matt Gelfand</h2>
+					<h2 class="byline caps">A deep dive into ESPN's onboarding process</h2>
+					</hgroup>
 					<hr>
-					<p class="subtext-lrg">ESPN’s “SportsCenter” app, released nearly one year ago, was an update to a previous incarnation called “ScoreCenter,” the worldwide leader’s scores-only application.  While reviews of ScoreCenter were generally well-received, ESPN wanted to provide users with a more branded experience, creating something that is <a href="http://frontrow.espn.go.com/2013/11/inside-the-new-sportscenter-app-maximizing-the-mobile-experience/">“only doable by ESPN.”</a>.  This meant moving beyond just scores, to news articles from the AP, team beat writers and internal sources, a constantly updated Twitter feed featuring ESPN personalities as well as heavy media inclusion, as much of the content in a user’s “news feed” features video analysis from various ESPN hosts and field reporters.</p> 
+					<p class="subtext-lrg">ESPN’s “SportsCenter” app, released nearly one year ago, was an update to a previous incarnation called “ScoreCenter,” the worldwide leader’s scores-only application.  While reviews of ScoreCenter were generally well-received, ESPN wanted to provide users with a more branded experience, creating something that is <a href="http://frontrow.espn.go.com/2013/11/inside-the-new-sportscenter-app-maximizing-the-mobile-experience/">“only doable by ESPN.”</a> This meant moving beyond just scores, to news articles from the Associated Press, team beat writers and internal sources, a constantly updated Twitter feed featuring ESPN personalities as well as heavy media inclusion, as much of the content in a user’s “news feed” features video analysis from various ESPN hosts and field reporters.</p> 
 
 					<p class="subtext-lrg">Fresh Tilled Soil had already harbored a personal relationship with Michael Rawlins, ESPN’s Principal User Experience Design Architect (he would speak on a panel at FTS’ annual gathering of UX experts, <a href="http://www.freshtilledsoil.com/uxfest-2014/">UX Fest</a>), which spurred my interest to download the app and see if I could suggest any improvements. However, the design was already slick. There was no glaring need to improve upon the app visually, which, prior to downloading the application, I had intended to do. Despite this hurdle, user testing within the office uncovered some glaring issues in flow, and provided opportunities for improvement beyond the presentation layer.</p>
 				</header>
@@ -50,22 +56,22 @@
  				<p class="subtext-lrg">By the end of testing, I was able to pinpoint which aspects of the app tended to leave users confused or stuck. In most cases, the wording wasn't descriptive enough or there were unneccessary extra barriers to entry.</p>
 				
 				<div class="circle-list">
-					<ul class="list caps">
+					<ul class="list">
 						<li>
 						<img class="expandUp" src="img/circletwo.png" alt="" />
-						<h1 class="text-md">Now</h1>
+						<h1 class="text-md caps">Now</h1>
 						<p class="subtext-md">A few people thought it would be a filtered view of games already in progress. One user called it “useless,” as it interrupted his discovery process to finding his favorite teams. Turns out, it’s the Twitter feed.</p>
 						</li>
 
 						<li>
 						<img class="expandUp" src="img/circlethree.png" alt="" />
-						<h1 class="text-md">Favorites</h1>
+						<h1 class="text-md caps">Favorites</h1>
 						<p class="subtext-md">The app gives users the option to view news of specific teams their fans of, but the process of getting to that point (and returning once you’ve ventured elsewhere) isn’t intuitive.</p>
 						</li>	
 
 						<li>
 						<img class="expandUp" src="img/circleone.png" alt="" />
-						<h1 class="text-md">Inbox</h1>
+						<h1 class="text-md caps">Inbox</h1>
 						<p class="subtext-md">Generally confusing and poorly named, it’s where a stream of news from all your favorite teams are housed. Not a single user initially recognized this as its purpose.</p>
 						</li>		
 					</ul>
@@ -78,12 +84,39 @@
 			<div class="column full">
 				<h1 class="text-lrg caps">The Iteration Process</h1>
 				<hr>
-				<p class="subtext-lrg">Having discovered specific pain points in discovery rather than design flaws, it became clear by the end of testing that some form of user onboarding was in order to prime users on how to use these features. Utilizing sites such as Mobile-Patterns.com and uxarchive.com for inspiration and the fantastic useronboard.com to discover best practices, I began fleshing out ideas for instructions, ultimately testing out two different styles: A pre-use experience where the app’s main features are broken down prior to actual use versus in-app onboarding learn-by-doing process that provides pre-baked instructions as a user clicks on certain areas of the app.</p> 
+				<p class="subtext-lrg">Having discovered specific pain points in discovery rather than design flaws, it became clear by the end of testing that some form of user onboarding was in order to prime users on how to use these features. Utilizing sites such as Mobile-Patterns.com and uxarchive.com for inspiration and the fantastic useronboard.com to discover best practices, I began fleshing out ideas for instructions, ultimately testing out two different styles: A pre-use experience where the app’s main features are broken down prior to actual use versus in-app onboarding learn-by-doing process that provides pre-baked instructions as a user clicks on certain areas of the app.</p>
 
-				<figure class="stages">
-					<img src="img/placeit-stages.png" id="stages-box" alt="">
-					<figcaption>The original version was too cluttered, and drew the eye to too many places. The second iteration was cleaned up with a black overlay more typical seen in onboarding processes, and the arrow is more refined. The final version utilized a background blur effect refined the arrow even more and showed users entire sections instead of peepholes.</figcaption>
-				</figure>
+				<ul class="stages">
+					<li>
+						<p class="inside-square-left"><span class="iteration-head">Iteration One</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem necessitatibus explicabo neque sit reiciendis, accusantium accusamus fugit qui dolor corporis magnam vitae quas, nisi adipisci soluta iusto, quae, consequatur odit!</p>
+						<img class="pic" src="img/square-a.png" alt="">
+					</li>
+					
+					<li>
+						<p class="inside-square-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem necessitatibus explicabo neque sit reiciendis, accusantium accusamus fugit qui dolor corporis magnam vitae quas, nisi adipisci soluta iusto, quae, consequatur odit!</p>
+						<img class="pic" src="img/square-b.png" alt="">
+					</li>
+	
+					<li>
+						<p class="inside-square-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem necessitatibus explicabo neque sit reiciendis, accusantium accusamus fugit qui dolor corporis magnam vitae quas, nisi adipisci soluta iusto, quae, consequatur odit!</p>
+						<img class="pic" src="img/square-c.png" alt="">
+					</li>
+					
+					<li>
+						<p class="inside-square-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem necessitatibus explicabo neque sit reiciendis, accusantium accusamus fugit qui dolor corporis magnam vitae quas, nisi adipisci soluta iusto, quae, consequatur odit!</p>
+						<img class="pic" src="img/square-d.png" alt="">
+					</li>
+
+					<li>
+						<p class="inside-square-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem necessitatibus explicabo neque sit reiciendis, accusantium accusamus fugit qui dolor corporis magnam vitae quas, nisi adipisci soluta iusto, quae, consequatur odit!</p>
+						<img class="pic" src="img/square-e.png" alt="">
+					</li>
+
+					<li>
+						<p class="inside-square-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nihil aut reprehenderit quaerat, dolorum ratione, harum repudiandae enim tempore sit iste eligendi commodi, maxime similique. Aliquid aliquam error officia omnis."</p>
+						<img class="pic" src="img/square-f.png" alt="">
+					</li>
+				</ul>
 
 				<p class="subtext-lrg">
 				Ultimately, I settled on a hybrid of both, allowing the user to get a taste for the app via choosing his or her favorite teams, followed by a prompt to sign up and dig deeper into the meat of the app. By having the user take significant action on the app (i.e. choosing three teams) before jumping into the sign-up / onboard process, a sense of commitment is created that can be followed up on down the line. Foursquare uses a similar process. 
@@ -119,41 +152,17 @@
 			</div>
 			
 			<div class="column third">
-				<img src="img/magnify2.png" alt="">
+				<img src="img/magnify2.png" id="mag" alt="">
 			</div>
 			
 			<div class="column third middle caps">
-				<img src="img/arrow-jenna.png" class="stretchRight" id="arrow" alt="">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis alias blanditiis aperiam quos. Rem dolore qui architecto praesentium iure, laboriosam rerum magnam maiores, reiciendis fuga placeat repellendus perferendis tenetur.</p>
+				<img src="img/arrow-jenna.png" alt="">
 			</div>
 
 			<div class="column third ">
-				<img class="slideRight" src="img/magnify2.png" alt="">
+				<img src="img/magnify2.png" alt="">
 			</div>
 		</div>
-			      
-		<div class="row clearfix body-section gray contain">	
-			<div class="column half">
-				<p class="subtext-med">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cumque in ut obcaecati hic, dolor! Perferendis obcaecati ab nobis cum exercitationem voluptatum labore explicabo similique. Veniam nulla esse, officia cupiditate</p>
-			</div>
-
-			<div class="column half">
-				<img class="magnify" src="img/magnify3.png" alt="">
-			</div>
-		</div>
-
-		<div class="row clearfix body-section gray contain">	
-
-			<div class="column half">
-				<img class="magnify" src="img/magnify1.png" alt="">
-			</div>
-			
-			<div class="column third">
-				<p class="subtext-med">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cumque in ut obcaecati hic, dolor! Perferendis obcaecati ab nobis cum exercitationem voluptatum labore explicabo similique. Veniam nulla esse, officia cupiditate</p>
-			</div>
-		</div>
-
-		
 
 		<div class="row clearfix body-section green contain">
 			<div class="column full">

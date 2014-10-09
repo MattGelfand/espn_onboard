@@ -82,7 +82,7 @@ figcaption {
 /*===================================== MAIN MOBILE STYLES ======================================*/
 
 html { 
-    background: url('../img/background2.png') no-repeat 50% 50%;
+    background: url('../img/background2.png') no-repeat 56% 43%;
     background-attachment: fixed; 
     font-family: 'Merriweather', serif;
   }
@@ -92,7 +92,7 @@ html {
   }
 
   .contain {
-    padding: 0 15rem 5rem 15rem;
+    padding: 0 20rem 5rem 20rem;
   }
 
   .title-box {
@@ -103,13 +103,15 @@ html {
 
   .byline {
     text-transform: uppercase;
-    margin: -4rem 0 3rem 0;
+    text-align: center;
+    margin: -3rem 0 2rem 0;
+    opacity: .6;
   }
 
   #homescreenbig {
     background: url('../img/homescreenbig.png') no-repeat 50% 75%;
     background-attachment: fixed; 
-    padding: 40em 0;
+    padding: 30em 0;
   }
 
   .body-section {
@@ -123,11 +125,6 @@ html {
     text-transform: uppercase;    
   }
 
-  .byline {
-    margin: -3rem 0 2rem 0;
-    opacity: .6;
-  }
-
   .pivot {
     background: url('../img/man.png') no-repeat;
     background-size: cover;
@@ -138,7 +135,7 @@ html {
     font-size: 3rem;
     font-weight: 400;
     line-height: 5.4rem;
-    padding: 3.6rem 0 4.6rem 0;
+    padding: 3.6rem 0 3.2rem 0;
     text-align: center;
     text-transform: uppercase;
     color: #222;
@@ -155,7 +152,7 @@ html {
     font-weight: 300;
     line-height: 3.2rem;
     text-align: left;
-    padding: 1.6rem 0; 
+    padding: 2.4rem 0; 
   }
 
   .subtext-md {
@@ -201,21 +198,69 @@ html {
 
   .stages {
     margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+    padding: 1.6rem 0;
+    position: relative;
   }
 
-  .stages-final {
+  .stages li {
+    display: inline;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .inside-square-left {
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    margin: 0 auto;
+    /* height: 100%; */
+    position: absolute;
+    left: 67%;
+    max-width: 300px;
+    height: 10rem;
+  }
+
+  .inside-square-right {
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    margin: 0 auto;
+    /* height: 100%; */
+    position: absolute;
+    right: 67%;
+    max-width: 300px;
+
+
+  .inside-square:hover {
+    opacity: 1;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+    transition: 1s ease all;
+  }
+
+  .iteration-head {
+    font-size: 5rem;
+    text-decoration: underline;
+    color: black;
+  }
+  
+    .stages-final {
     margin: 0 auto;
     padding: 3.2rem 0;
     position: relative;
     text-align: center;
   }
 
-  #stages-box {
-    padding: 1.6rem 0;
+    .final-screens {
+    padding: 3.2rem 0;
   }
 
-  .final-screens {
-    padding-top: 1.6rem;
+
+  #stages-box {
+    padding: 1.6rem 0;
   }
 
   .middle {
@@ -227,8 +272,8 @@ html {
     font-family: 'Merriweather', serif;
   }
 
-  #arrow {
-    padding-bottom: 3rem;
+  #mag {
+    visibility: hidden;
   }
 
   footer {
