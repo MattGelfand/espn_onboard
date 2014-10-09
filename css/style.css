@@ -103,12 +103,18 @@ html {
 
   .body-section {
     margin: 0 auto;
-    color: #484848;
+    color: #222;
     text-align: left;
   }
 
   .caps {
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;    
+  }
+
+  .byline {
+    margin: -3rem 0 2rem 0;
+    opacity: .6;
   }
 
   .pivot {
@@ -142,7 +148,7 @@ html {
   }
 
   .subtext-md {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     color: #959595;  
   }
   
@@ -203,6 +209,11 @@ html {
 
   .middle {
     margin-top: 15rem;
+  }
+
+  .middle p {
+    text-transform: lowercase;
+    font-family: 'Merriweather', serif;
   }
 
   #arrow {
