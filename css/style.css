@@ -101,6 +101,17 @@ html {
     padding-bottom: 6rem;
   }
 
+  .byline {
+    text-transform: uppercase;
+    margin: -4rem 0 3rem 0;
+  }
+
+  #homescreenbig {
+    background: url('../img/homescreenbig.png') no-repeat 50% 75%;
+    background-attachment: fixed; 
+    padding: 40em 0;
+  }
+
   .body-section {
     margin: 0 auto;
     color: #222;
@@ -208,7 +219,7 @@ html {
   }
 
   .middle {
-    margin-top: 15rem;
+    margin-top: 5rem;
   }
 
   .middle p {
@@ -218,6 +229,15 @@ html {
 
   #arrow {
     padding-bottom: 3rem;
+  }
+
+  footer {
+   text-align: center;
+  }
+
+  footer p {
+    text-transform: uppercase;
+    padding: 1rem 0 2rem 0;
   }
 
 
