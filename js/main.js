@@ -1,11 +1,47 @@
 $(window).scroll(function() {
-		$('#mag').each(function(){
+		$('.square-right').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+200) {
+			if (imagePos < topOfWindow+700) {
 				/*console.log('line 7');*/
-				$(this).addClass("expandUp");
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+
+$(window).scroll(function() {
+		$('.square-left').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+700) {
+				/*console.log('line 7');*/
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+
+$(window).scroll(function() {
+		$('.dual').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+650) {
+				/*console.log('line 7');*/
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+
+$(window).scroll(function() {
+		$('.dual-left').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+650) {
+				/*console.log('line 7');*/
+				$(this).addClass("slideLeft");
 			}
 		});
 	});

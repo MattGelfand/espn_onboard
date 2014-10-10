@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="container" id="top">
-		<div class="row clearfix contain">
+		<div class="row clearfix body-section">
 			<div class="column full">
 				<header class="title-box"
 					data-bottom="opacity:1"
@@ -23,36 +23,35 @@
 					data--10-top="opacity: .5"
 					data--90-top="opacity: 0"
 					>
-					<h1 class="text-lrg caps">This...is SportsCenter</h1>
-					<h2 class="byline caps">A deep dive into ESPN's onboarding process</h2>
+					<h1 class="title caps">This...is SportsCenter</h1>
+					<h2 class="subtitle caps">A deep dive into ESPN's onboarding process</h2>
 					</hgroup>
-					<hr>
 					<p class="subtext-lrg">ESPN’s “SportsCenter” app, released nearly one year ago, was an update to a previous incarnation called “ScoreCenter,” the worldwide leader’s scores-only application.  While reviews of ScoreCenter were generally well-received, ESPN wanted to provide users with a more branded experience, creating something that is <a href="http://frontrow.espn.go.com/2013/11/inside-the-new-sportscenter-app-maximizing-the-mobile-experience/">“only doable by ESPN.”</a> This meant moving beyond just scores, to news articles from the Associated Press, team beat writers and internal sources, a constantly updated Twitter feed featuring ESPN personalities as well as heavy media inclusion, as much of the content in a user’s “news feed” features video analysis from various ESPN hosts and field reporters.</p> 
 
 					<p class="subtext-lrg">Fresh Tilled Soil had already harbored a personal relationship with Michael Rawlins, ESPN’s Principal User Experience Design Architect (he would speak on a panel at FTS’ annual gathering of UX experts, <a href="http://www.freshtilledsoil.com/uxfest-2014/">UX Fest</a>), which spurred my interest to download the app and see if I could suggest any improvements. However, the design was already slick. There was no glaring need to improve upon the app visually, which, prior to downloading the application, I had intended to do. Despite this hurdle, user testing within the office uncovered some glaring issues in flow, and provided opportunities for improvement beyond the presentation layer.</p>
 				</header>
 				
-				<figure id="homescreenbig" class="hatch"></figure>
+				<!--<figure class="homescreenbig hidden">
+					<img class="app-home slideUp" src="img/homescreenbig.png" alt="">
+				</figure>-->
 				
 			</div>
 		</div><!--row-->
 
 	
 		
-		<div class="row clearfix body-section pivot contain">
+		<div class="row clearfix body-section pivot">
 			<div class="column full">
 				<h1 class="text-lrg caps on-black">Pivoting</h1>
-				<hr>
  				<p class="subtext-lrg on-black">One of the most intriguing aspects of user testing is the disparity with which different types of users are able to navigate an app or website. A user flow that may seem obvious to the app’s designer or power users can be viewed as a complicated maze by those less familiar or experienced with the given genre of app. “SportsCenter’s” user testing flipped the script - those who followed sports with regularity tended to become frustrated quicker with the tasks asked of them.</p> 
-				<p class="subtext-lrg on-black">In hindsight, this makes sense; sports fans are immediately privy to which sports, teams and news they want to see, and which they’d rather ignore. “SportsCenter” greets all users with a melting pot-style news feed of every major (and not so major) sport as the home screen, turning the discovery process into a game of “what buttons do I have to press to customize this thing,” as opposed to a blank slate that allows you to curate your own feed from the start (see: Bleacher Report’s TeamStream). Figuring out how to include a stronger level of curation while still maintaining the app’s core values of “SportsCenter on your phone” turned out to be a significant challenge.</p>
+				<p class="subtext-lrg on-black">In hindsight, this makes sense; sports fans are immediately privy to which sports, teams and news they want to see, and which they’d rather ignore. “SportsCenter” greets all users with a melting pot-style news feed of every major (and not so major) sport as the home screen, turning the discovery process into a game of “what buttons do I have to press to customize this thing,” as opposed to a blank slate that allows you to curate your own feed from the start (see: <a href="http://bleacherreport.com/mobile">Bleacher Report’s TeamStream</a>). Figuring out how to include a stronger level of curation while still maintaining the app’s core values of “SportsCenter on your phone” turned out to be a significant challenge.</p>
 			</div>			
 		</div><!--row-->
 
 
-		<div class="row clearfix body-section contain">
+		<div class="row clearfix body-section">
 			<div class="column full">
 				<h1 class="text-lrg caps">Pain Points</h1>
-				<hr>
  				<p class="subtext-lrg">By the end of testing, I was able to pinpoint which aspects of the app tended to leave users confused or stuck. In most cases, the wording wasn't descriptive enough or there were unneccessary extra barriers to entry.</p>
 				
 				<div class="circle-list">
@@ -83,50 +82,79 @@
 		<div class="row clearfix body-section blue contain">
 			<div class="column full">
 				<h1 class="text-lrg caps">The Iteration Process</h1>
-				<hr>
 				<p class="subtext-lrg">Having discovered specific pain points in discovery rather than design flaws, it became clear by the end of testing that some form of user onboarding was in order to prime users on how to use these features. Utilizing sites such as Mobile-Patterns.com and uxarchive.com for inspiration and the fantastic useronboard.com to discover best practices, I began fleshing out ideas for instructions, ultimately testing out two different styles: A pre-use experience where the app’s main features are broken down prior to actual use versus in-app onboarding learn-by-doing process that provides pre-baked instructions as a user clicks on certain areas of the app.</p>
 
 				<ul class="stages">
 					<li>
-						<img class="grow" src="img/square-a.png" alt="">
-						<div class="inside-square-left">
-							<h1 class="caps">Iteration One</h1>
-							<p class="subtext-small">This is the first iteration.</p>
+						<figure class="square">
+							<img src="img/square-a.png" alt="">
+
+							<figcaption class="square-right hidden">
+								<h1 class="caps">Iteration One</h1>
+								<p class="subtext-small">This is the first iteration.</p>
+							</figcaption>
+
+						</figure>
 					</li>
 					
 					<li>
-						<img class="grow" src="img/square-b.png" alt="">
-						<div class="inside-square-right">
-							<h1 class="caps">Iteration Two</h1>
-							<p class="subtext-small">This is the second iteration.</p>
+						<figure class="square">
+							<img src="img/square-b.png" alt="">
+
+							<figcaption class="square-left hidden">
+								<h1 class="caps">Iteration Two</h1>
+								<p class="subtext-small">This is the second iteration.</p>
+							</figcaption>
+
+						</figure>
 					</li>
 
 					<li>
-						<img class="grow" src="img/square-c.png" alt="">
-						<div class="inside-square-left">
-							<h1 class="caps">Iteration Three</h1>
-							<p class="subtext-small">This is the third iteration.</p>
+						<figure class="square">
+							<img src="img/square-c.png" alt="">
+
+							<figcaption class="square-right hidden">
+								<h1 class="caps">Iteration Three</h1>
+								<p class="subtext-small">This is the third iteration.</p>
+							</figcaption>
+
+						</figure>
 					</li>
 
 					<li>
-						<img class="grow" src="img/square-d.png" alt="">
-						<div class="inside-square-right">
-							<h1 class="caps">Iteration Four</h1>
-							<p class="subtext-small">This is the fourth iteration.</p>
+						<figure class="square">
+							<img src="img/square-d.png" alt="">
+
+							<figcaption class="square-left hidden">
+								<h1 class="caps">Iteration Four</h1>
+								<p class="subtext-small">This is the fourth iteration.</p>
+							</figcaption>
+
+						</figure>
 					</li>
 
 					<li>
-						<img class="grow" src="img/square-e.png" alt="">
-						<div class="inside-square-left">
-							<h1 class="caps">Iteration Five</h1>
-							<p class="subtext-small">This is the fifth iteration.</p>
+						<figure class="square">
+							<img src="img/square-e.png" alt="">
+
+							<figcaption class="square-right hidden">
+								<h1 class="caps">Iteration Five</h1>
+								<p class="subtext-small">This is the fifth iteration.</p>
+							</figcaption>
+
+						</figure>
 					</li>
 
 					<li>
-						<img class="grow" src="img/square-f.png" alt="">
-						<div class="inside-square-right">
-							<h1 class="caps">Iteration Six</h1>
-							<p class="subtext-small">This is the sixth iteration.</p>
+						<figure class="square">
+							<img src="img/square-f.png" alt="">
+
+							<figcaption class="square-left hidden">
+								<h1 class="caps">Iteration Six</h1>
+								<p class="subtext-small">This is the sixth iteration.</p>
+							</figcaption>
+
+						</figure>
 					</li>
 				</ul>
 
@@ -135,52 +163,53 @@
 				</p>
 
  				<p class="subtext-lrg">Determining how the experience would look was mostly a game of trial and error. I knew I wanted to play with overlays and somehow utilize playbook-style arrows to guide users to specific features. Naturally, pairing down and stripping back (along with just the right amount of Gaussian Blur) reaped what I felt to be the best results.</p>
+ 			</div>
+ 		</div>
 
-				
+ 		<div class="row clearfix body-section black">
+			<div class="column full">
 				<h1 class="text-lrg caps">The Flow</h1>
-				<hr>
-				    <ul class="stages">
-						<li>
-							<img src="img/onboard1.png" alt="">
-							<div class="inside-square-left">
-								<h1 class="caps">Screen One</h1>
-								<p class="subtext-small">This is the first iteration.</p>
-							</div>
-						</li>
+			    <ul class="stages-inline">
+					<li>
+						<img src="img/onboard1.png" alt="">
+						<div class="outside-square">
+							<h1 class="caps">Screen One</h1>
+							<p class="subtext-small">This is screen one.</p>
+						</div>
+					</li>
 
-						<li>
-							<img src="img/onboard2.png" alt="">
-							<div class="inside-square-left">
-								<h1 class="caps">Screen Two</h1>
-								<p class="subtext-small">This is the first iteration.</p>
-							</div>
-						</li>
+					<li>
+						<img src="img/onboard2.png" alt="">
+						<div class="outside-square flow-opposite">
+							<h1 class="caps">Screen Two</h1>
+							<p class="subtext-small">This is screen two.</p>
+						</div>
+					</li>
 
-						<li>
-							<img src="img/onboard3.png" alt="">
-							<div class="inside-square-left">
-								<h1 class="caps">Screen Three</h1>
-								<p class="subtext-small">This is the first iteration.</p>
-							</div>
-						</li>
+					<li>
+						<img src="img/onboard3.png" alt="">
+						<div class="outside-square">
+							<h1 class="caps">Screen Three</h1>
+							<p class="subtext-small">This is screen three.</p>
+						</div>
+					</li>
 
-						<li>
-							<img src="img/onboard4.png" alt="">
-							<div class="inside-square-left">
-								<h1 class="caps">Screen Four</h1>
-								<p class="subtext-small">This is the first iteration.</p>
-							</div>
-						</li>
-					</ul>
-				    <p class="subtext-lrg">Upon signing in, the user is greeted with a priming screen that explains what he or she is about the see, followed by a breakdown of each of the pain points expressed during the user interviews. By shifting from a dark overlay to a white blur, it became neccessary to provide more context for the user beyond the peepholes. 
+					<li>
+						<img src="img/onboard4.png" alt="">
+						<div class="outside-square">
+							<h1 class="caps">Screen Four</h1>
+							<p class="subtext-small">This is screen four..</p>
+						</div>
+					</li>
+				</ul>
+			    <p class="subtext-lrg">Upon signing in, the user is greeted with a priming screen that explains what he or she is about the see, followed by a breakdown of each of the pain points expressed during the user interviews. By shifting from a dark overlay to a white blur, it became neccessary to provide more context for the user beyond the peepholes. 
 			</div>
 		</div><!--row-->
 
 
-		<div class="row clearfix body-section red contain">
+		<div class="row clearfix body-section red">
 			<div class="column full">
 				<h1 class="text-lrg caps">Design is only half the battle</h1>
-				<hr>
  				<p class="subtext-lrg">The user - app relationship is one that must be built on trust. The user took the time (and perhaps money) to download your application, so it’s your job to not betray the user by performing actions without his or her permission.</p> 
 
 				<figure class="permission">
@@ -197,30 +226,55 @@
 			</div>
 		</div><!--row-->
 
-		<div class="row clearfix body-section gray contain">
+		<div class="row clearfix body-section gray">
 			<div class="column full">
 				<h1 class="text-lrg caps">A bit of maintenance</h1>
-				<hr>
 				<p class="subtext-lrg">Aside from guiding users through the main actions of the app via onboarding, some additional minor changes were needed to enhance the discovery experience.</p>
 			</div>
-			
-			<div class="column third">
-				<img src="img/magnify2.png" id="mag" alt="">
+		</div>
+		
+		<div class="row clearfix body-section gray">
+			<div class="column half">
+				<figure class="dual hidden">
+					<img src="img/dual-1.png" alt="">
+				</figure>
 			</div>
 			
-			<div class="column third middle caps">
-				<img src="img/arrow-jenna.png" alt="">
-			</div>
-
-			<div class="column third ">
-				<img src="img/magnify2.png" alt="">
+			<div class="column half">
+				<h1 class="text-md caps text-left">Lorem</h1>
+				<p class="subtext-med">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima unde omnis animi magnam fugiat temporibus sapiente ratione illo quibusdam enim, itaque impedit, hic blanditiis exercitationem facilis aliquid, ea eos earum.</p>
 			</div>
 		</div>
 
-		<div class="row clearfix body-section green contain">
+		<div class="row clearfix body-section gray">
+			<div class="column half">
+				<h1 class="text-md caps text-left">Lorem</h1>
+				<p class="subtext-med">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima unde omnis animi magnam fugiat temporibus sapiente ratione illo quibusdam enim, itaque impedit, hic blanditiis exercitationem facilis aliquid, ea eos earum.</p>
+			</div>
+			
+			<div class="column half">
+				<figure class="dual-left slideleft hidden">
+					<img src="img/dual-2.png" alt="">
+				</figure>
+			</div>
+		</div>
+
+		<div class="row clearfix body-section gray">
+			<div class="column half">
+				<figure class="dual hidden">
+					<img src="img/dual-3.png" alt="">
+				</figure>
+			</div>
+
+			<div class="column half">
+				<h1 class="text-md caps text-left">Lorem</h1>
+				<p class="subtext-med">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima unde omnis animi magnam fugiat temporibus sapiente ratione illo quibusdam enim, itaque impedit, hic blanditiis exercitationem facilis aliquid, ea eos earum.</p>
+			</div>
+		</div>
+
+		<div class="row clearfix body-section green">
 			<div class="column full">
 				<h1 class="text-lrg caps">A learning experience</h1>
-				<hr>
 				<p class="subtext-lrg">Onboarding is a deceptively intricate process, where the primary objective is as much to provide direction as it ease to soothe potential user anxiety and keep them at ease. It can be easy to get lost in the aesthetic polish of an app - and while ESPN did produce a visually pleasing product, what good is it if users quit in frustration before they find the content they’re looking for? User testing provides valuable sets of fresh eyes, and you may want to consider the feedback as an onboarding instruction manual rather than subtitling enacting changes into the app itself.</p>
 			</div>
 		</div> 
