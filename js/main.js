@@ -3,7 +3,7 @@ $(window).scroll(function() {
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
+			if (imagePos < topOfWindow+500) {
 				/*console.log('line 7');*/
 				$(this).addClass("slideUp");
 			}
@@ -15,7 +15,7 @@ $(window).scroll(function() {
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
+			if (imagePos < topOfWindow+500) {
 				/*console.log('line 7');*/
 				$(this).addClass("slideUp");
 			}
@@ -45,6 +45,26 @@ $(window).scroll(function() {
 			}
 		});
 	});
+
+
+
+
+
+var slider = new IdealImageSlider.Slider({
+    selector: '#slider',
+    height: 400, // Required but can be set by CSS
+    interval: 4000,
+    previousNavSelector: '#backtop',
+});
+slider.addBulletNav();
+slider.start();
+
+
+
+
+
+
+
 
 
 	/*var s = skrollr.init({
