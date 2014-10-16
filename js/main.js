@@ -47,58 +47,14 @@ $(window).scroll(function() {
 	});
 
 
+// Picture element HTML5 shiv
+document.createElement( "picture" );
 
 
-
-var slider = new IdealImageSlider.Slider({
-    selector: '#slider',
-    height: 400, // Required but can be set by CSS
-    interval: 4000,
-    previousNavSelector: '#backtop',
+$('.phone').click(function() {
+	transition({ skewX:'30deg'})
 });
-slider.addBulletNav();
-slider.start();
 
 
 
 
-
-
-
-
-
-	/*var s = skrollr.init({
-    	render: function(data) {
-        //Log the current scroll position.
-        console.log(data.curTop);
-    		}
-		});
-
-
-function enableSkrollr() {
-	console.log('we are on desktop');
-
-	var s = skrollr.init({
-    	render: function(data) {
-        //Log the current scroll position.
-        console.log(data.curTop);
-    		}
-		});
-}
-
-function disableSkrollr() {
-	console.log('we are on mobile');
-
-	var s = skrollr.init();
-	s.destroy();
-}
-
-enquire.register("screen and (min-width: 40rem)", {
-    match : function() {
-        enableSkrollr();
-    },  
-    unmatch : function() {
-        disableSkrollr();
-    }
-});
-*/
