@@ -69,13 +69,13 @@ HOVER.css
 	}
 
 	a {
-	color: rgb(251,17,44);
-	text-decoration: none;
+	text-decoration: underline;
 	font-weight: bold;
+	color: #5B86C8;
 	}
 
 	a:visited {
-	color: rgba(251,17,44,.5);
+	opacity: .5;
 	}
 
 	hr {
@@ -94,15 +94,14 @@ HOVER.css
 	}
 
 	.picture {
-		padding: 3.2rem 0;
+	padding: 1.6rem 0 2.4rem 0;
+	text-align: center;
 	}
 
 
 /*===================================== MAIN MOBILE STYLES ======================================*/
 
 	html { 
-	background: url('../img/background2.png') no-repeat 56% 43%;
-	background-attachment: fixed; 
 	font-family: 'Merriweather', serif;
 	}
 
@@ -111,9 +110,10 @@ HOVER.css
 	}
 
 	.title {
-	 font-size: 2.4rem;
-	 text-align: center;
-	 margin: -5rem 0 2.5rem 0;
+	font-size: 1.6rem;
+	text-align: center;
+	margin: -5rem 0 2.5rem 0;
+	overflow: hidden;
 	}
 
 	.subtitle {
@@ -137,7 +137,7 @@ HOVER.css
 	.body-section {
 	margin: 0 auto;
 	text-align: left;
-	padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+	padding: 1.6rem;
 	}
 
 	.caps {
@@ -167,7 +167,7 @@ HOVER.css
 	.text-lrg:after, .subtitle:after {
 	content: "";
 	height: 1px;
-	background-color: black;
+	background-color: #222;
 	display: block;
 	position: absolute;
 	bottom: 0;
@@ -181,23 +181,29 @@ HOVER.css
 	}
 
 	.subtext-lrg {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 300;
-	line-height: 2.4;
+	line-height: 2.2;
 	text-align: left;
 	padding: 1.6rem 0; 
 	}
 
-	.subtext-med {
+	.subtext-md {
 	font-size: 1.1rem;
 	line-height: 1.6;
-	  
+	font-weight: 300;
 	}
 
 	.subtext-small {
-	color: #fff;
+	color: #222;
+	font-weight: 300;
 	font-size: .8rem;
-	padding: .8rem 0;
+	padding: .8rem;
+	margin-top: .8rem;
+	background: #fff;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
 	}
 
 	.on-black {
@@ -220,10 +226,6 @@ HOVER.css
 
 	.body-section-maintenance {
 	background: rgba(255,250,250,.9);
-	}
-
-	.text-left {
-	text-align: left;
 	}
 
 	.logo {
@@ -282,10 +284,6 @@ HOVER.css
 	padding: 1.6rem 0;
 	}
 
-	.mac-screen {
-	padding: 1.6rem 0;
-	}
-
 	footer {
 	text-align: center;
 	}
@@ -295,59 +293,32 @@ HOVER.css
 	padding: 1rem 0 2rem 0;
 	}
 
+	.mac-screen {
+		margin:4rem 0;
+	}
+
+	.white {
+		color: #fff;
+	}
+
+	.text-left {
+	text-align: left;
+	}
+
+	.lala {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
 
 /*===================================== MEDIA QUERIES ======================================*/
 
-/* Large screen breakpoint (970px) */
-@media (min-width: 48rem) {
-  
-  
 
-} /*end large screen query*/
+
 
 /* Medium screen breakpoint (640px) */
-@media (min-width: 40rem) { 
+@media (min-width: 40rem) {
   
-	.body-section {
-	padding: 3.2rem 25rem;
-	}
-
-	.square {
-	position: relative;
-	max-width: 450px;
-	margin: 0 auto;
-	}
-
-	.square-right {
-	position: absolute;
-	top: 10%;
-	right: -71%;
-	visibility: hidden;
-	text-align: left;
-	}
-
-	.square-left {
-	position: absolute;
-	top: 10%;
-	left: -71%;
-	visibility: hidden;
-	text-align: left;
-	}
-
-	.outside-square {
-	text-align: center;
-	}
-
-	#slider {
-	padding: 5rem 0 0 0;
-	margin: 0 0 5rem 0;
-	}
-
-	.title {
-	font-size: 6rem;
-	margin: -5rem 0 2.5rem 0;
-	}
-
 	.column {
 	float: left;
 	padding-left: 1rem;
@@ -377,8 +348,56 @@ HOVER.css
 	.column.flow-opposite { 
 	float: right; 
 	} 
+}
 
+/* Larger screen breakpoint (815px) */
+@media (min-width: 50rem) {	
+	html {
+	background: url('../img/background2.png') no-repeat 56% 43%;
+	background-attachment: fixed; 
 	}
+
+	.subtext-lrg {
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 2.4;
+	}
+
+	.subtext-md {
+	font-size: 1rem;
+	line-height: 1.8;
+	}
+
+	.title {
+	font-size: 2.4rem;
+	}
+}
+
+
+/* Larger screen breakpoint (960px) */
+@media (min-width: 70rem) {	
+
+	.square {
+	position: relative;
+	max-width: 450px;
+	margin: 0 auto;
+	}
+
+	.square-right {
+	position: absolute;
+	top: 10%;
+	right: -71%;
+	visibility: hidden;
+	}
+
+	.square-left {
+	position: absolute;
+	top: 10%;
+	left: -71%;
+	visibility: hidden;
+	}
+}
+
 
 
 /*

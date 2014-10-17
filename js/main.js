@@ -27,7 +27,7 @@ $(window).scroll(function() {
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+650) {
+			if (imagePos < topOfWindow+350) {
 				/*console.log('line 7');*/
 				$(this).addClass("slideRight");
 			}
@@ -39,7 +39,7 @@ $(window).scroll(function() {
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+650) {
+			if (imagePos < topOfWindow+350) {
 				/*console.log('line 7');*/
 				$(this).addClass("slideLeft");
 			}
