@@ -51,10 +51,6 @@ $(window).scroll(function() {
 document.createElement( "picture" );
 
 
-$('.phone').click(function() {
-	transition({ skewX:'30deg'})
-});
-
 
 
 

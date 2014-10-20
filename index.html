@@ -4,96 +4,96 @@
 <meta charset="UTF-8">
 <title>ESPN Onboarding Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><link rel='stylesheet' href='css/style.css' />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' href='css/style.css' />
 <!--remember to change favicon-->
 </head>
 <body>
 	<div class="container" id="top">
-		<div class="row clearfix body-section">
-			<div class="lala">
-			<div class="column full">
-				<figure class="logo">
-					<img src="img/logo.png" class="logo" alt="Circular SportsCenter logo">
-				</figure>
-				<h1 class="title caps">This...is SportsCenter</h1>
-				<h2 class="subtitle caps">A deep dive into ESPN's onboarding process</h2>
-				<p class="subtext-lrg">ESPN’s “SportsCenter” app, released in November 2013, was an update to a previous incarnation called “ScoreCenter,” the Worldwide Leader’s scores-only application.  While reviews of ScoreCenter were generally well-received, ESPN wanted to provide users with a more branded experience, creating something that is <a href="http://frontrow.espn.go.com/2013/11/inside-the-new-sportscenter-app-maximizing-the-mobile-experience/">“only doable by ESPN.”</a> This meant moving beyond just scores, to news articles from the Associated Press (as well as team beat writers and internal sources), a constantly updated Twitter feed featuring ESPN personalities and heavy media inclusion, as much of the content in a user’s “news feed” features video analysis from various ESPN hosts and field reporters.</p> 
+		<header class="row clearfix">
+			<div class="constrain">
+				<div class="column full">
+					<figure class="logo">
+						<img src="img/logo.png" class="logo" alt="Circular SportsCenter logo">
+					</figure>
 
-				<p class="subtext-lrg"><a href="http://www.freshtilledsoil.com/">Fresh Tilled Soil</a> had already harbored a personal relationship with Michael Rawlins, ESPN’s Principal User Experience Design Architect (he would speak on a panel at FTS’ annual gathering of UX experts, <a href="http://www.freshtilledsoil.com/uxfest-2014/">UX Fest</a>), which spurred my interest to download the app and see if I could suggest any improvements.</p>
+					<h1 class="title">This...is SportsCenter</h1>
+					<h2 class="subtitle">A deep dive into ESPN's onboarding process</h2>
+					<p class="subtext-lrg">ESPN’s “SportsCenter” app, released in November 2013, was an update to a previous incarnation called “ScoreCenter,” the Worldwide Leader’s scores-only application.  While reviews of ScoreCenter were generally well-received, ESPN wanted to provide users with a more branded experience, creating something that is <a href="http://frontrow.espn.go.com/2013/11/inside-the-new-sportscenter-app-maximizing-the-mobile-experience/" class="contrast">“only doable by ESPN.”</a> This meant moving beyond just scores, to news articles from the Associated Press (as well as team beat writers and internal sources), a constantly updated Twitter feed featuring ESPN personalities and heavy media inclusion, as much of the content in a user’s “news feed” features video analysis from various ESPN hosts and field reporters.</p> 
 
-				<figure class="phone">
-					<img src="img/homescreenbig.png" alt="">
-				</figure>
-				
-			</div>
-			</div>
-		</div><!--row-->
+					<p class="subtext-lrg"><a href="http://www.freshtilledsoil.com/" class="contrast">Fresh Tilled Soil</a> had already harbored a personal relationship with Michael Rawlins, ESPN’s Principal User Experience Design Architect (he would speak on a panel at FTS’ annual gathering of UX experts, <a href="http://www.freshtilledsoil.com/uxfest-2014/" class="contrast">UX Fest</a>), which spurred my interest to download the app and see if I could suggest any improvements.</p>
 
-		<div class="row clearfix body-section pivot">
-			<div class="lala">
-			<div class="column full">
-				<h1 class="text-lrg caps on-black">Pivoting</h1>
- 				<p class="subtext-lrg on-black">However, the app's design was already slick. There was no glaring need to improve upon the app visually, which, prior to downloading, I had intended to do. So, on the recommendation of mentor <a href="http://www.freshtilledsoil.com/team/steve-hickey/">Steve Hickey</a>, I switched gears to providing an onboarding process, as user testing within the office uncovered some glaring issues in flow, and provided opportunities for improvement beyond the presentation layer.</p>
-
- 				<p class="subtext-lrg on-black">One of the most intriguing aspects of user testing is the disparity with which different types of users are able to navigate an app or website. A user flow that may seem obvious to the app’s designer or power users can be viewed as a complicated maze by those less familiar with the given genre of app. “SportsCenter’s” user testing results flipped the script - those who followed sports with regularity tended to become frustrated quicker with the tasks asked of them.</p> 
-				
-				<p class="subtext-lrg on-black">In hindsight, this makes sense; sports fans are immediately privy to which sports, teams and news they want to see, and which they’d rather ignore. “SportsCenter” greets all users with a melting pot-style news feed of every major (and not so major) sport on its home screen, turning the discovery process into a game of “what buttons do I have to press to customize this thing.” This is in opposition to a blank slate approach that allows you to curate your own feed from the start (see: <a href="http://bleacherreport.com/mobile">Bleacher Report’s TeamStream</a>). Figuring out how to include a stronger level of curation while still maintaining the app’s core values of “SportsCenter on your phone” turned out to be a significant challenge.</p>
-			</div>
-			</div>			
-		</div><!--row-->
-
-
-		<div class="row clearfix body-section">
-			<div class="lala">
-			<div class="column full">
-				<h1 class="text-lrg caps">Pain Points</h1>
- 				<p class="subtext-lrg">By the end of testing, I was able to pinpoint which aspects of the app tended to leave users confused or stuck. In most cases, the wording wasn't descriptive enough or there were unnecessary extra barriers to entry.</p>
-				
-				<div class="circle-list">
-					<ul class="list">
-						<li>
-							<img class="float" src="img/circletwo.png" alt="" />
-							<h1 class="text-md caps">Now</h1>
-							<p class="subtext-md">One of four features on the app's navigation bar, a few people thought it would be a filtered view of games already in progress. One user called it “useless,” as it interrupted his discovery process to finding his favorite teams. Turns out, it’s the Twitter feed.</p>
-						</li>
-
-						<li>
-							<img class="float" src="img/circlethree.png" alt="" />
-							<h1 class="text-md caps">Favorites</h1>
-							<p class="subtext-md">The app gives users the option to view news of specific teams, but, as we'll learn later on, the process of getting to that point (and returning once you’ve ventured elsewhere) isn’t intuitive.</p>
-						</li>	
-
-						<li>
-							<img class="float" src="img/circleone.png" alt="" />
-							<h1 class="text-md caps">Inbox</h1>
-							<p class="subtext-md">A option on the bottom tab bar, it's a generally confusing feature for new users. Its intended use is to house a stream of news specific to the teams you've chosen as your favorites. Not a single user initially recognized this as its purpose, and some ignored it entirely.</p>
-						</li>		
-					</ul>
+					<figure class="phone">
+						<img src="img/homescreenbig.png" alt="">
+					</figure>
 				</div>
 			</div>
-		</div><!--lala-->
-		</div><!--row-->
+		</header>
+
+		<section class="row clearfix pivot">
+			<div class="constrain">
+				<div class="column full">
+					<h1 class="text-lrg opposite-text">Pivoting</h1>
+	 				<p class="subtext-lrg opposite-text">However, the app's design was already slick. There was no glaring need to improve upon the app visually, which, prior to downloading, I had intended to do. So, on the recommendation of mentor <a href="http://www.freshtilledsoil.com/team/steve-hickey/">Steve Hickey</a>, I switched gears to providing an onboarding process, as user testing within the office uncovered some glaring issues in flow, and provided opportunities for improvement beyond the presentation layer.</p>
+
+	 				<p class="subtext-lrg opposite-text">One of the most intriguing aspects of user testing is the disparity with which different types of users are able to navigate an app or website. A user flow that may seem obvious to the app’s designer or power users can be viewed as a complicated maze by those less familiar with the given genre of app. “SportsCenter’s” user testing results flipped the script - those who followed sports with regularity tended to become frustrated quicker with the tasks asked of them.</p> 
+					
+					<p class="subtext-lrg opposite-text">In hindsight, this makes sense; sports fans are immediately privy to which sports, teams and news they want to see, and which they’d rather ignore. “SportsCenter” greets all users with a melting pot-style news feed of every major (and not so major) sport on its home screen, turning the discovery process into a game of “what buttons do I have to press to customize this thing.” This is in opposition to a blank slate approach that allows you to curate your own feed from the start (see: <a href="http://bleacherreport.com/mobile">Bleacher Report’s TeamStream</a>). Figuring out how to include a stronger level of curation while still maintaining the app’s core values of “SportsCenter on your phone” turned out to be a significant challenge.</p>
+				</div>
+			</div>			
+		</section><!--row-->
 
 
-		<div class="row clearfix body-section body-section-iteration">
-			<div class="lala">
-			<div class="column full">
-				<h1 class="text-lrg caps">The Iteration Process</h1>
-				<p class="subtext-lrg">Having discovered specific pain points in discovery rather than design flaws, it became clear by the end of testing that some form of user onboarding was in order to prime users on how to use these features. Utilizing sites such as <a href="http://www.mobile-patterns.com/">mobile-patterns.com</a> and <a href="http://uxarchive.com/">uxarchive.com</a> for inspiration and the fantastic <a href="http://www.useronboard.com/">useronboard.com</a> to discover best practices, I began fleshing out ideas for instructions, ultimately testing out two different styles: Breaking down main features prior to actual use, and a learn-by-doing process that provides pre-baked instructions as a user clicks on certain areas of the app.</p>
+		<section class="row clearfix">
+			<div class="constrain">
+				<div class="column full">
+					<h1 class="text-lrg">Pain Points</h1>
+	 				<p class="subtext-lrg">By the end of testing, I was able to pinpoint which aspects of the app tended to leave users confused or stuck. In most cases, the wording wasn't descriptive enough or there were unnecessary extra barriers to entry.</p>
+					
+					<div class="circle-list">
+						<ul class="list">
+							<li>
+								<img class="float" src="img/circletwo.png" alt="A peephole view of a section of the app"/>
+								<h3 class="text-small">Now</h1>
+								<p class="subtext-md">One of four features on the app's navigation bar, a few people thought it would be a filtered view of games already in progress. One user called it “useless,” as it interrupted his discovery process to finding his favorite teams. Turns out, it’s the Twitter feed.</p>
+							</li>
+
+							<li>
+								<img class="float" src="img/circlethree.png" alt="A peephole view of a section of the app" />
+								<h3 class="text-small">Favorites</h1>
+								<p class="subtext-md">The app gives users the option to view news of specific teams, but, as we'll learn later on, the process of getting to that point (and returning once you’ve ventured elsewhere) isn’t intuitive.</p>
+							</li>	
+
+							<li>
+								<img class="float" src="img/circleone.png" alt="A peephole view of a section of the app" />
+								<h3 class="text-small">Inbox</h1>
+								<p class="subtext-md">A option on the bottom tab bar, it's a generally confusing feature for new users. Its intended use is to house a stream of news specific to the teams you've chosen as your favorites. Not a single user initially recognized this as its purpose, and some ignored it entirely.</p>
+							</li>		
+						</ul>
+					</div>
+				</div>
 			</div>
-		</div>
-		</div>
+		</section>
+
+
+		<section class="row clearfix body-section-iteration">
+			<div class="constrain">
+				<div class="column full">
+					<h1 class="text-lrg">The Iteration Process</h1>
+					<p class="subtext-lrg">Having discovered specific pain points in discovery rather than design flaws, it became clear by the end of testing that some form of user onboarding was in order to prime users on how to use these features. Utilizing sites such as <a href="http://www.mobile-patterns.com/" class="contrast">mobile-patterns.com</a> and <a href="http://uxarchive.com/" class="contrast">uxarchive.com</a> for inspiration and the fantastic <a href="http://www.useronboard.com/" class="contrast">useronboard.com</a> to discover best practices, I began fleshing out ideas for instructions, ultimately testing out two different styles: Breaking down main features prior to actual use, and a learn-by-doing process that provides pre-baked instructions as a user clicks on certain areas of the app.</p>
+				</div>
+			</div>
+		</section>
 			
-		<div class="row clearfix body-section-iteration">
+		<section class="row clearfix body-section-iteration">
 			<div class="column full">
 				<ul class="stages">
 					<li>
 						<figure class="square">
-							<img src="img/square-a.png" alt="">
+							<img src="img/square-a.png" alt="A small-screen view of the first onboarding iteration">
 
 							<figcaption class="square-right hidden">
-								<h1 class="caps">Iteration One</h1>
+								<h1 class="text-left">Iteration One</h1>
 								<p class="subtext-small">A small red overlay with instructions pops up as you explore.</p>
 							</figcaption>
 
@@ -102,10 +102,10 @@
 					
 					<li>
 						<figure class="square">
-							<img src="img/square-b.png" alt="">
+							<img src="img/square-b.png" alt="A small-screen view of the second onboarding iteration">
 
 							<figcaption class="square-left hidden">
-								<h1 class="caps">Iteration Two</h1>
+								<h1 class="text-left">Iteration Two</h1>
 								<p class="subtext-small">Dotted lines pointing to each icon's function, unsure of how this would've been implemented.</p>
 							</figcaption>
 
@@ -114,10 +114,10 @@
 
 					<li>
 						<figure class="square">
-							<img src="img/square-c.png" alt="">
+							<img src="img/square-c.png" alt="A small-screen view of the third onboarding iteration">
 
 							<figcaption class="square-right hidden">
-								<h1 class="caps">Iteration Three</h1>
+								<h1 class="text-left">Iteration Three</h1>
 								<p class="subtext-small">One of four slides explaning the app's primary features. Uses page control indicator dots to represent currently visible view.</p>
 							</figcaption>
 
@@ -126,10 +126,10 @@
 
 					<li>
 						<figure class="square">
-							<img src="img/square-d.png" alt="">
+							<img src="img/square-d.png" alt="A small-screen view of the fourth onboarding iteration">
 
 							<figcaption class="square-left hidden">
-								<h1 class="caps">Iteration Four</h1>
+								<h1 class="text-left">Iteration Four</h1>
 								<p class="subtext-small">Overlay time! First, black with a peephole. However, there's a bit too much going on, and I became cramped for space when writing instructions.</p>
 							</figcaption>
 
@@ -138,10 +138,10 @@
 
 					<li>
 						<figure class="square">
-							<img src="img/square-e.png" alt="">
+							<img src="img/square-e.png" alt="A small-screen view of the fifth onboarding iteration">
 
 							<figcaption class="square-right hidden">
-								<h1 class="caps">Iteration Five</h1>
+								<h1 class="text-left">Iteration Five</h1>
 								<p class="subtext-small">A more subdued black overlay with peephole design. Cleaner. </p>
 							</figcaption>
 
@@ -150,164 +150,160 @@
 
 					<li>
 						<figure class="square">
-							<img src="img/square-f.png" alt="">
+							<img src="img/square-f.png" alt="A small-screen view of the sixth onboarding iteration">
 
 							<figcaption class="square-left hidden">
-								<h1 class="caps">Iteration Six</h1>
+								<h1 class="text-left">Iteration Six</h1>
 								<p class="subtext-small">A complete 180. White with background blur and dark blue text. Peepholes replaced with larger views of sections.</p>
 							</figcaption>
-
 						</figure>
 					</li>
 				</ul>
 			</div>
- 		</div>
+ 		</section>
 
- 		<div class="row clearfix body-section body-section-iteration">
- 			<div class="lala">
-			<div class="column full">
- 				<p class="subtext-lrg">Determining how the experience would look was mostly a game of trial and error. I knew I wanted to play with overlays and somehow utilize playbook-style arrows to guide users to specific features. Naturally, pairing down and stripping back (along with just the right amount of Gaussian Blur) reaped what I felt to be the best results.</p>
- 			</div>
- 		</div>
- 		</div>
+ 		<section class="row clearfix body-section-iteration">
+ 			<div class="constrain">
+				<div class="column full">
+	 				<p class="subtext-lrg">Determining how the experience would look was mostly a game of trial and error. I knew I wanted to play with overlays and somehow utilize playbook-style arrows to guide users to specific features. Naturally, pairing down and stripping back (along with just the right amount of Gaussian Blur) reaped what I felt to be the best results.</p>
+	 			</div>
+	 		</div>
+ 		</section>
 
- 		<div class="row clearfix body-section body-section-flow">
- 			<div class="lala">
-			<div class="column full">	
-				<h1 class="text-lrg caps">The Primary Flow</h1>
-				<p class="subtext-lrg">Using Sketch 3 to map out the flow, I added screens to replicate multiple user journeys within the app. By the end it turned into an unwieldy labyrinth, but with proper labeling and Sketch's pension for quick and easy manipulation, I was able to keep track of each screen and place them accordingly in prototyping tool InVision.</p>
-				<figure class="flow">
-					<img src="img/no.png" alt="" />
-				</figure>
+ 		<section class="row clearfix body-section-flow">
+ 			<div class="constrain">
+				<div class="column full">	
+					<h1 class="text-lrg">The Primary Flow</h1>
+					<p class="subtext-lrg">Using Sketch 3 to map out the flow, I added screens to replicate multiple user journeys within the app. By the end it turned into an unwieldy labyrinth, but with proper labeling and Sketch's pension for quick and easy manipulation, I was able to keep track of each screen and place them accordingly in prototyping tool InVision.</p>
+					<figure class="flow">
+						<img src="img/no.png" alt="A zoomed out view of the user flow in Sketch 3" />
+					</figure>
+				</div>
 			</div>
-		</div>
-		</div>
+		</section>
 		
-		<div class="row clearfix body-section body-section-flow">
-			<div class="lala">
-			<div class="column half mac-screen">
-				<picture>
-				<!--[if IE 9]><video style="display: none;"><![endif]-->
-				<source srcset="img/mac-screen-large.png" media="(min-width: 1150px)">
-				<!--[if IE 9]></video><![endif]-->
-				<img srcset="img/mac-screen-small.png" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-				</picture>
-			</div>
-
-			<div class="column half mac-screen">
-				<picture>
-				<!--[if IE 9]><video style="display: none;"><![endif]-->
-				<source srcset="img/mac-screen-two-large.png" media="(min-width: 1150px)">
-				<!--[if IE 9]></video><![endif]-->
-				<img srcset="img/mac-screen-two-small.png" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-				</picture>
-			</div>
-		</div>
-		</div><!--row-->
-
-
-		<div class="row clearfix body-section body-section-battle">
-			<div class="lala">
-			<div class="column full">
-				<h1 class="text-lrg caps">Design is only half the battle</h1>
- 				<p class="subtext-lrg">The user - app relationship is one that must be built on trust. The user took the time (and perhaps money) to download your application, so it’s your job to not betray the user by performing actions without his or her permission.</p> 
-
- 				<p class="subtext-lrg">Paramount examples are priming for location - there must be a reason to provide such information. The result of doing so should enhance the app experience in some way, or allow the user to take action. In this case, SportsCenter asks for location so the app can preload user favorites with teams in their area.</p> 
-				
-				<div class="picture">
+		<section class="row clearfix body-section-flow">
+			<div class="constrain">
+				<div class="column half mac-screen">
 					<picture>
 					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="img/permission1-large.png" media="(min-width: 1130px)">
+					<source srcset="img/mac-screen-large.png" media="(min-width: 1150px)">
 					<!--[if IE 9]></video><![endif]-->
-					<img srcset="img/permission1-small.png" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+					<img srcset="img/mac-screen-small.png" alt="A screenshot of a feature in the InVision app set inside a mock laptop screen">
 					</picture>
 				</div>
 
-				<p class="subtext-lrg">Signing up can also become an occasional barrier, especially if there's no option to experiment with the app first to see if it's worth the commitment. Currently, a user can only choose his or her favorite team/teams by signing up, which then lets the app pre-populate a list of teams based on location. However, it'd be more effective to let users choose their teams first (three minimum), creating a custom experience they can (and want) to come back to after signing up.
-
- 				<div class="picture">
-	 				<picture>
+				<div class="column half mac-screen">
+					<picture>
 					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="img/permission2-large.png" media="(min-width: 1130px)">
+					<source srcset="img/mac-screen-two-large.png" media="(min-width: 1150px)">
 					<!--[if IE 9]></video><![endif]-->
-					<img srcset="img/permission2-small.png" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+					<img srcset="img/mac-screen-two-small.png" alt="A screenshot of a feature in the InVision app set inside a mock laptop screen">
 					</picture>
 				</div>
-
 			</div>
-		</div>
-		</div>
+		</section>
 
-		<div class="row clearfix body-section body-section-maintenance">
-			<div class="lala">
-			<div class="column full">
-				<h1 class="text-lrg caps">A bit of maintenance</h1>
-				<p class="subtext-lrg">Aside from guiding users through the main actions of the app via onboarding, some additional minor changes were needed to enhance the discovery experience.</p>
+
+		<section class="row clearfix">
+			<div class="constrain">
+				<div class="column full">
+					<h1 class="text-lrg">Design is only half the battle</h1>
+	 				<p class="subtext-lrg">The user - app relationship is one that must be built on trust. The user took the time (and perhaps money) to download your application, so it’s your job to not betray the user by performing actions without his or her permission.</p> 
+
+	 				<p class="subtext-lrg">Paramount examples are priming for location - there must be a reason to provide such information. The result of doing so should enhance the app experience in some way, or allow the user to take action. In this case, SportsCenter asks for location so the app can preload user favorites with teams in their area.</p> 
+					
+					<div class="picture">
+						<picture>
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="img/permission1-large.png" media="(min-width: 1130px)">
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset="img/permission1-small.png" alt="An iOS alert asking for the user's location">
+						</picture>
+					</div>
+
+					<p class="subtext-lrg">Signing up can also become an occasional barrier, especially if there's no option to experiment with the app first to see if it's worth the commitment. Currently, a user can only choose his or her favorite team/teams by signing up, which then lets the app pre-populate a list of teams based on location. However, it'd be more effective to let users choose their teams first (three minimum), creating a custom experience they can (and want) to come back to after signing up.
+
+	 				<div class="picture">
+		 				<picture>
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="img/permission2-large.png" media="(min-width: 1130px)">
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset="img/permission2-small.png" alt="An iOS alert asking the user to sign up">
+						</picture>
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
+
+		<section class="row clearfix body-section-maintenance">
+			<div class="constrain">
+				<div class="column full">
+					<h1 class="text-lrg">A bit of maintenance</h1>
+					<p class="subtext-lrg">Aside from guiding users through the main actions of the app via onboarding, some additional minor changes were needed to enhance the discovery experience.</p>
+				</div>
+			</div>
+		</section>
 		
-		<div class="row clearfix body-section body-section-maintenance">
-			<div class="lala">
-			<div class="column half">
-				<figure class="dual hidden">
-					<img src="img/dual-1.png" alt="">
-				</figure>
+		<section class="row clearfix body-section-maintenance">
+			<div class="constrain">
+				<div class="column half">
+					<figure class="dual hidden">
+						<img src="img/dual-1.png" alt="Two mock-iPhones side-by-side with the same screenshot of the app, but one with a peephole view of an added feature.">
+					</figure>
+				</div>
+				
+				<div class="column half">
+					<h1 class="text-md">Adding Clarity</h1>
+					<p class="subtext-md">When users tap the "Favorites" tab, they're taken to screen to edit their favorite teams. The back button on the top left of the screen does this as well, but its meaning isn't quite as clear, as some testers thought it would bring them back to the home news screen. Adding the word "Edit" clears up any confusion.</p>
+				</div>
 			</div>
-			
-			<div class="column half">
-				<h1 class="text-md caps text-left">Adding Clarity</h1>
-				<p class="subtext-md">When users tap the "Favorites" tab, they're taken to screen to edit their favorite teams. The back button on the top left of the screen does this as well, but its meaning isn't quite as clear, as some testers thought it would bring them back to the home news screen. Adding the word "Edit" clears up any confusion.</p>
-			</div>
-		</div>
-		</div>
+		</section>
 
-		<div class="row clearfix body-section body-section-maintenance">
-			<div class="lala">
-			<div class="column half">
-				<figure class="dual-left slideleft hidden">
-					<img src="img/dual-2.png" alt="">
-				</figure>
-			</div>
+		<section class="row clearfix body-section-maintenance opposite">
+			<div class="constrain">
+				<div class="column half">
+					<figure class="dual-left slideleft hidden">
+						<img src="img/dual-2.png" alt="Two mock-iPhones side-by-side with the same screenshot of the app, but one with a peephole view of an added feature.">
+					</figure>
+				</div>
 
 				<div class="column half">
-				<h1 class="text-md caps text-left">Tap and Remove</h1>
-				<p class="subtext-md">One minor but annoying feature when editing favorites is that the chosen teams don't disappear from the "Suggested" area once they're tapped, which may imply to some users that their gesture wasn't recognized. Teams should be removed when tapped, and added back if a user decides to stop receiving news and alerts from that team.</p>
+					<h1 class="text-md">Tap and Remove</h1>
+					<p class="subtext-md">One minor but annoying feature when editing favorites is that the chosen teams don't disappear from the "Suggested" area once they're tapped, which may imply to some users that their gesture wasn't recognized. Teams should be removed when tapped, and added back if a user decides to stop receiving news and alerts from that team.</p>
+				</div>
 			</div>
-		</div>
-		</div>
+		</section>
 
-		<div class="row clearfix body-section body-section-maintenance">
-			<div class="lala">
-			<div class="column half">
-				<figure class="dual hidden">
-					<img src="img/dual-3.png" alt="">
-				</figure>
-			</div>
+		<section class="row clearfix body-section-maintenance">
+			<div class="constrain">
+				<div class="column half">
+					<figure class="dual hidden">
+						<img src="img/dual-3.png" alt="Two mock-iPhones side-by-side with the same screenshot of the app, but one with a peephole view of an added feature.">
+					</figure>
+				</div>
 
-			<div class="column half">
-				<h1 class="text-md caps text-left">Semantics</h1>
-				<p class="subtext-md">Users can view their favorites at a glance by tapping and holding the "Favorites" tab and then choose which team-specific news to view, which is a nice feature. However, "Favorites" is also reserved for editing teams on tap, which may lead to some conflict. The home "SportsCenter" tab universally represents news, so it makes more sense for the tap + hold gesture to be placed there.</p>
+				<div class="column half">
+					<h1 class="text-md">Semantics</h1>
+					<p class="subtext-md">Users can view their favorites at a glance by tapping and holding the "Favorites" tab and then choose which team-specific news to view, which is a nice feature. However, "Favorites" is also reserved for editing teams on tap, which may lead to some conflict. The home "SportsCenter" tab universally represents news, so it makes more sense for the tap + hold gesture to be placed there.</p>
+				</div>
 			</div>
-		</div>
-		</div>
+		</section>
 
-		<div class="row clearfix body-section">
-			<div class="lala">
-			<div class="column full">
-				<h1 class="text-lrg caps">A learning experience</h1>
-				<p class="subtext-lrg">Onboarding is a deceptively intricate process, and there are dozens of best practices to keep in mind (<a href="http://www.growhack.com/2013/08/20/the-best-in-user-onboarding/#.VEEwhovF9H0">in fact, here's 70 of them</a>). How you choose to present instructions should be based on the anatomy of the app; For instance, more intricate designs with many layers of functionality may benefit from inline content, while simpler apps may only need a few screens prior to use to get users started. And candor matters too - it's far better for content to convey a friendly, warm, almost human demeanor than cold, robotic responses. Generous use of exclamation points tends to help with this. While ESPN does already have its own (albiet sparse) inline onboarding process, user testing helped bring to light pain points and frustrations that may have gone overlooked, which could increased adoption and more consistent use from current users. 
+		<section class="row clearfix">
+			<div class="constrain">
+				<div class="column full">
+					<h1 class="text-lrg">A learning experience</h1>
+					<p class="subtext-lrg">Onboarding is a deceptively intricate process, and there are dozens of best practices to keep in mind (<a href="http://www.growhack.com/2013/08/20/the-best-in-user-onboarding/#.VEEwhovF9H0" class="contrast">in fact, here's 70 of them</a>). How you choose to present instructions should be based on the anatomy of the app; For instance, more intricate designs with many layers of functionality may benefit from inline content, while simpler apps may only need a few screens prior to use to get users started. And candor matters too - it's far better for content to convey a friendly, warm, almost human demeanor than cold, robotic responses. Generous use of exclamation points tends to help with this. While ESPN does already have its own (albiet sparse) inline onboarding process, user testing helped bring to light pain points and frustrations that may have gone overlooked, which could increase adoption and more consistent use from current users. 
+				</div>
 			</div>
-		</div>
-		</div> 
+		</section> 
 
 		<footer class="floating">
-			<a href="#top" id="backtop"><img src="img/upchev.png" alt=""></a>
-			<p class="caps">top</p>
+			<a href="#top" class="backtop"><img src="img/upchev.png" alt="A hovering chevron pointing upwards that links to the top of the page"></a>
+			<h1>top</h1>
 		</footer>
-
 	</div><!--container-->
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="js/skrollr.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 </body>
