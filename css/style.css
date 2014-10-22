@@ -99,6 +99,10 @@ NORMALIZE.css
 	font-family: 'Merriweather', serif;
 	}
 
+	body {
+	-webkit-font-smoothing: antialiased;
+	}
+
 	.container {
 	margin: 0 auto;
 	}
@@ -291,6 +295,11 @@ NORMALIZE.css
 
 	.opposite-text {	
 	color: #fff;
+	}
+
+	.figheader {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
 	}
 
 
